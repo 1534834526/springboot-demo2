@@ -18,6 +18,7 @@ public class EmpController {
     @Autowired
     private EmpMapper empMapper;
 
+
     @RequestMapping("/emp")
     public List<Emp> test1(HttpServletRequest request) {
         List<Emp> persons = empMapper.selectAll();
